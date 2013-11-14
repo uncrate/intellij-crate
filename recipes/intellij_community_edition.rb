@@ -24,7 +24,7 @@ when "centos", "redhat", "debian", "ubuntu"
 when "mac_os_x"
   include_recipe "dmg"
 
-  dmg_package node['intellij_community_edition']['shortcut_name'] do
+  dmg_package node['intellij_community_edition']['name'] do
       source node['intellij_community_edition']['download_url']
       owner node['uncrate']['user']
       action :install
