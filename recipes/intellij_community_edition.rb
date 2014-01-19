@@ -10,6 +10,7 @@ when "centos", "redhat", "debian", "ubuntu"
   ark node['intellij_community_edition']['install_dir'] do
     url node['intellij_community_edition']['download_url']
     path node['intellij_community_edition']['install_path']
+    owner node['uncrate']['user']
     mode 0755
     action :put
   end
