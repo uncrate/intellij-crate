@@ -2,7 +2,7 @@ case node[:platform]
 when "centos", "redhat", "debian", "ubuntu"
   default['intellij_community_edition']['download_url']="http://download.jetbrains.com/idea/ideaIC-13.tar.gz"
 
-  default['intellij_community_edition']['name']="IntelliJ IDEA Community Edition"
+  default['intellij_community_edition']['name']="IntelliJ IDEA 13 CE"
 when "mac_os_x"
   default['intellij_community_edition']['download_url']="http://download.jetbrains.com/idea/ideaIC-13.dmg"
 
